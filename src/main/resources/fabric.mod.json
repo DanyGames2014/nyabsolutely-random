@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "dumbthings",
+  "version": "${version}",
+
+  "name": "Dumb Things",
+  "description": "Just a collection of random useless junk",
+  "authors": [
+    "DanyGames2014"
+  ],
+  "contact": {
+  },
+
+  "license": "MIT",
+  "icon": "assets/dumbthings/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "stationapi:event_bus": [
+    ],
+    "stationapi:event_bus_client": [
+    ],
+    "stationapi:event_bus_server": [
+    ]
+  },
+  "mixins": [
+    "dumbthings.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": "1.0.0-beta.7.3"
+  }
+}
