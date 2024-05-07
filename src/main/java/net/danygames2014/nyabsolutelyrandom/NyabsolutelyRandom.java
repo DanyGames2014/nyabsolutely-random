@@ -11,7 +11,7 @@ import net.modificationstation.stationapi.api.mod.entrypoint.Entrypoint;
 import net.modificationstation.stationapi.api.util.Namespace;
 import net.modificationstation.stationapi.api.util.Null;
 
-public class NyabsolutelyRandom implements ModInitializer {
+public class NyabsolutelyRandom {
     @Entrypoint.Namespace
     public static final Namespace NAMESPACE = Null.get();
 
@@ -19,6 +19,8 @@ public class NyabsolutelyRandom implements ModInitializer {
 
     @EventListener
     public void registerItems(ItemRegistryEvent event){
+        registerAccessorySlots();
+
         upsideDownGlasses = new UpsideDownGlassesItem(NAMESPACE.id("upside_down_glasses")).setTranslationKey(NAMESPACE, "upside_down_glasses");
     }
 
@@ -27,8 +29,7 @@ public class NyabsolutelyRandom implements ModInitializer {
 
     }
 
-    @Override
-    public void onInitialize() {
+    public void registerAccessorySlots() {
         AccessoryRegister.add("glasses");
     }
 }
