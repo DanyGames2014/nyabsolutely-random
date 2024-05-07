@@ -1,9 +1,10 @@
 package net.danygames2014.nyabsolutelyrandom;
 
 import com.matthewperiut.accessoryapi.api.AccessoryRegister;
+import net.danygames2014.nyabsolutelyrandom.block.BirthdayCakeBlock;
 import net.danygames2014.nyabsolutelyrandom.item.UpsideDownGlassesItem;
-import net.fabricmc.api.ModInitializer;
 import net.mine_diver.unsafeevents.listener.EventListener;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.modificationstation.stationapi.api.event.registry.BlockRegistryEvent;
 import net.modificationstation.stationapi.api.event.registry.ItemRegistryEvent;
@@ -17,6 +18,8 @@ public class NyabsolutelyRandom {
 
     public static Item upsideDownGlasses;
 
+    public static Block calmilamsyCakeBlock;
+
     @EventListener
     public void registerItems(ItemRegistryEvent event){
         registerAccessorySlots();
@@ -26,7 +29,7 @@ public class NyabsolutelyRandom {
 
     @EventListener
     public void registerBlocks(BlockRegistryEvent event){
-
+        calmilamsyCakeBlock = new BirthdayCakeBlock(NAMESPACE.id("calmilamsy_cake"), "calmilamsy").setTranslationKey(NAMESPACE, "calmilamsy_cake");
     }
 
     public void registerAccessorySlots() {
