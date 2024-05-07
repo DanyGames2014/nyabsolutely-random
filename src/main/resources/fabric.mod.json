@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "dumbthings",
+  "id": "nyabsolutelyrandom",
   "version": "${version}",
 
-  "name": "Dumb Things",
-  "description": "Just a collection of random useless junk",
+  "name": "Nyabsolutely Random",
+  "description": "Just a collection of random stuff",
   "authors": [
     "DanyGames2014"
   ],
@@ -12,11 +12,12 @@
   },
 
   "license": "MIT",
-  "icon": "assets/dumbthings/icon.png",
+  "icon": "assets/nyabsolutelyrandom/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
+      "net.danygames2014.nyabsolutelyrandom.NyabsolutelyRandom"
     ],
     "stationapi:event_bus_client": [
     ],
@@ -24,7 +25,7 @@
     ]
   },
   "mixins": [
-    "dumbthings.mixins.json"
+    "nyabsolutelyrandom.mixins.json"
   ],
 
   "depends": {
