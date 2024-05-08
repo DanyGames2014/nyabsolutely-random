@@ -23,4 +23,10 @@ public class UpsideDownGlassesItem extends GlassesItem{
     public void postWorldRender(class_555 worldRenderer, Minecraft client) {
         GL11.glCullFace(GL11.GL_BACK);
     }
+
+    @Override
+    public void constructRenderer() {
+        this.texture = "assets/nyabsolutelyrandom/stationapi/textures/accessory/glasses/upside_down.png";
+        super.constructRenderer();
+    }
 }

@@ -36,4 +36,10 @@ public class MexicoGlassesItem extends GlassesItem{
         GL11.glEnable(GL11.GL_ALPHA_TEST);
         GL11.glEnable(GL11.GL_TEXTURE_2D);
     }
+
+    @Override
+    public void constructRenderer() {
+        this.texture = "assets/nyabsolutelyrandom/stationapi/textures/accessory/glasses/mexico.png";
+        super.constructRenderer();
+    }
 }

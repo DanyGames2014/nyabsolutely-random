@@ -1,5 +1,6 @@
 package net.danygames2014.nyabsolutelyrandom.item;
 
+import net.danygames2014.nyabsolutelyrandom.client.GlassesRenderer;
 import net.minecraft.class_555;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.render.Tessellator;
@@ -35,5 +36,11 @@ public class PinkGlassesItem extends GlassesItem{
         GL11.glDisable(GL11.GL_BLEND);
         GL11.glEnable(GL11.GL_ALPHA_TEST);
         GL11.glEnable(GL11.GL_TEXTURE_2D);
+    }
+
+    @Override
+    public void constructRenderer() {
+        this.texture = "assets/nyabsolutelyrandom/stationapi/textures/accessory/glasses/pink.png";
+        super.constructRenderer();
     }
 }
