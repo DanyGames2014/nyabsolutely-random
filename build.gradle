@@ -88,6 +88,15 @@ dependencies {
 	modImplementation("net.glasslauncher:HowManyItems-Fabric-Unofficial:${project.howmanyitems_version}") {
 		transitive false
 	}
+//	modImplementation ("com.github.paulevsGitch:BHCreative:${project.bhcreative_version}"){
+//		transitive false
+//	}
+	modImplementation("com.github.matthewperiut:spc-babric:${project.spc_version}") {
+		transitive false
+	}
+	modImplementation("com.github.DanyGames2014:spawneggs:${project.spawneggs_version}") {
+		transitive false
+	}
 
 	// Dependencies
 	modImplementation("com.github.matthewperiut:accessory-api:${project.accessoryapi_version}") {
