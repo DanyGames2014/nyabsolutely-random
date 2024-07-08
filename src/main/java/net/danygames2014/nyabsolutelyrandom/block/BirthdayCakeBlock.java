@@ -1,7 +1,7 @@
 package net.danygames2014.nyabsolutelyrandom.block;
 
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.block.Material;
+import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.world.World;
 import net.modificationstation.stationapi.api.template.block.TemplateBlock;

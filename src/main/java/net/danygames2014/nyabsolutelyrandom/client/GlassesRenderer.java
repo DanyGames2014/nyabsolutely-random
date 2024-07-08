@@ -32,7 +32,7 @@ public class GlassesRenderer implements AccessoryRenderer {
             return;
         }
         textureManager.bindTexture(textureManager.getTextureId(texture));
-        brightness = player.method_1394(h);
+        brightness = player.getBrightnessAtEyes(h);
 
         GL11.glColor3f(brightness * color.getRed() / 255f, brightness * color.getGreen() / 255f, brightness * color.getBlue() / 255f);
 
