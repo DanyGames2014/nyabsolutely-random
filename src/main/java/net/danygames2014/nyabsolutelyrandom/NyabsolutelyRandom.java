@@ -21,6 +21,7 @@ public class NyabsolutelyRandom {
     @Entrypoint.Namespace
     public static final Namespace NAMESPACE = Null.get();
 
+    public static Item glassesItem;
     public static Item upsideDownGlassesItem;
     public static Item pinkGlassesItem;
     public static Item mexicoGlassesItem;
@@ -37,6 +38,7 @@ public class NyabsolutelyRandom {
     public void registerItems(ItemRegistryEvent event){
         registerAccessorySlots();
 
+        glassesItem = new GlassesItem(NAMESPACE.id("glasses")).setTranslationKey(NAMESPACE, "glasses");
         upsideDownGlassesItem = new UpsideDownGlassesItem(NAMESPACE.id("upside_down_glasses")).setTranslationKey(NAMESPACE, "upside_down_glasses");
         pinkGlassesItem = new PinkGlassesItem(NAMESPACE.id("pink_glasses")).setTranslationKey(NAMESPACE, "pink_glasses");
         mexicoGlassesItem = new MexicoGlassesItem(NAMESPACE.id("mexico_glasses")).setTranslationKey(NAMESPACE, "mexico_glasses");
