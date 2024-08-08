@@ -16,12 +16,12 @@ import net.modificationstation.stationapi.api.util.Identifier;
 import java.util.Optional;
 
 public class GlassesItem extends TemplateItem implements Accessory, HasCustomRenderer {
-    public String texture = "";
+    public String texture;
     public GlassesRenderer renderer;
 
     public GlassesItem(Identifier identifier) {
         super(identifier);
-        this.texture = "assets/nyabsolutelyrandom/stationapi/textures/accessory/base.png";
+        this.texture = "assets/nyabsolutelyrandom/stationapi/textures/accessory/glasses/base.png";
     }
 
     @Override
