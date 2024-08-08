@@ -1,6 +1,6 @@
 {
 	"parent": "nyabsolutelyrandom:block/poster",
 	"textures": {
-		"texture": "nyabsolutelyrandom:block/flag/trans"
+		"texture": "nyabsolutelyrandom:block/flag/czech"
 	}
 }

@@ -32,6 +32,7 @@ public class NyabsolutelyRandom {
     public static Block calmilamsyCakeBlock;
 
     public static Block transFlag;
+    public static Block czechFlag;
 
     @EventListener
     public void registerItems(ItemRegistryEvent event){
@@ -52,6 +53,7 @@ public class NyabsolutelyRandom {
         calmilamsyCakeBlock = new BirthdayCakeBlock(NAMESPACE.id("calmilamsy_cake"), "calmilamsy").setTranslationKey(NAMESPACE, "calmilamsy_cake");
 
         transFlag = new PosterBlock(NAMESPACE.id("trans_flag")).setTranslationKey(NAMESPACE, "trans_flag");
+        czechFlag = new PosterBlock(NAMESPACE.id("czech_flag")).setTranslationKey(NAMESPACE, "czech_flag");
     }
 
     public void registerAccessorySlots() {
