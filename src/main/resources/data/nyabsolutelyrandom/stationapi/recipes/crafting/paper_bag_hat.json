@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ppp",
+    "pdp"
+  ],
+  "key": {
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "d": {
+      "item": "minecraft:dye",
+      "damage": 0
+    }
+  },
+  "result": {
+    "item": "nyabsolutelyrandom:paper_bag_hat",
+    "count": 1
+  }
+}

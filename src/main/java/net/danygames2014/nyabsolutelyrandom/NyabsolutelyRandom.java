@@ -6,14 +6,12 @@ import net.danygames2014.nyabsolutelyrandom.block.PosterBlock;
 import net.danygames2014.nyabsolutelyrandom.item.*;
 import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
 import net.modificationstation.stationapi.api.event.registry.BlockRegistryEvent;
 import net.modificationstation.stationapi.api.event.registry.ItemRegistryEvent;
 import net.modificationstation.stationapi.api.item.tool.ToolMaterialFactory;
 import net.modificationstation.stationapi.api.mod.entrypoint.Entrypoint;
-import net.modificationstation.stationapi.api.template.block.TemplateBlock;
 import net.modificationstation.stationapi.api.util.Namespace;
 import net.modificationstation.stationapi.api.util.Null;
 
@@ -25,6 +23,8 @@ public class NyabsolutelyRandom {
     public static Item upsideDownGlassesItem;
     public static Item pinkGlassesItem;
     public static Item mexicoGlassesItem;
+
+    public static Item paperBagHat;
 
     public static Item thunderStickItem;
 
@@ -43,6 +43,8 @@ public class NyabsolutelyRandom {
         upsideDownGlassesItem = new UpsideDownGlassesItem(NAMESPACE.id("upside_down_glasses")).setTranslationKey(NAMESPACE, "upside_down_glasses");
         pinkGlassesItem = new PinkGlassesItem(NAMESPACE.id("pink_glasses")).setTranslationKey(NAMESPACE, "pink_glasses");
         mexicoGlassesItem = new MexicoGlassesItem(NAMESPACE.id("mexico_glasses")).setTranslationKey(NAMESPACE, "mexico_glasses");
+
+        paperBagHat = new PaperBagHatItem(NAMESPACE.id("paper_bag_hat")).setTranslationKey(NAMESPACE, "paper_bag_hat");
 
         thunderStickItem = new ThunderStickItem(NAMESPACE.id("thunder_stick")).setTranslationKey(NAMESPACE, "thunder_stick");
 
