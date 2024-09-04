@@ -16,6 +16,7 @@ public class BanHammerItem extends TemplateItem {
 
     public BanHammerItem(Identifier identifier) {
         super(identifier);
+        this.setMaxCount(1);
     }
 
     @Override
