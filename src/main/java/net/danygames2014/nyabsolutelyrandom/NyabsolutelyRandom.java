@@ -27,6 +27,7 @@ public class NyabsolutelyRandom {
     public static Item paperBagHat;
 
     public static Item thunderStickItem;
+    public static Item banHammerItem;
 
     public static Item glassSwordItem;
 
@@ -47,6 +48,7 @@ public class NyabsolutelyRandom {
         paperBagHat = new PaperBagHatItem(NAMESPACE.id("paper_bag_hat")).setTranslationKey(NAMESPACE, "paper_bag_hat");
 
         thunderStickItem = new ThunderStickItem(NAMESPACE.id("thunder_stick")).setTranslationKey(NAMESPACE, "thunder_stick");
+        banHammerItem = new BanHammerItem(NAMESPACE.id("ban_hammer")).setTranslationKey(NAMESPACE, "ban_hammer");
 
         ToolMaterial glassMaterial = ToolMaterialFactory.create("glass", 0, 1, 1, 16);
         glassSwordItem = new GlassSwordItem(NAMESPACE.id("glass_sword"),glassMaterial).setTranslationKey(NAMESPACE, "glass_sword");
