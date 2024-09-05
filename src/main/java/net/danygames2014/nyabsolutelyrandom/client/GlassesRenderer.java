@@ -26,7 +26,7 @@ public class GlassesRenderer implements AccessoryRenderer {
     public void renderThirdPerson(PlayerEntity player, PlayerEntityRenderer renderer, ItemStack itemStack, double x, double y, double z, float h, float v) {
         RenderingHelper.beforeBiped(player, renderer, model, x, y, z, h, v);
 
-        TextureManager textureManager = EntityRenderDispatcher.field_2489.field_2493;
+        TextureManager textureManager = EntityRenderDispatcher.INSTANCE.textureManager;
         if (textureManager == null) {
             System.err.println("The entity texture manager is currently null");
             return;
