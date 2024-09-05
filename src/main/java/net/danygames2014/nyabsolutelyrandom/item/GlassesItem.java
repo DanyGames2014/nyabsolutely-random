@@ -21,7 +21,8 @@ public class GlassesItem extends TemplateItem implements Accessory, HasCustomRen
 
     public GlassesItem(Identifier identifier) {
         super(identifier);
-        this.texture = "assets/nyabsolutelyrandom/stationapi/textures/accessory/glasses/base.png";
+        this.setMaxCount(1);
+        this.texture = "/assets/nyabsolutelyrandom/stationapi/textures/accessory/glasses/base.png";
     }
 
     @Override

@@ -26,7 +26,7 @@ public class UpsideDownGlassesItem extends GlassesItem{
 
     @Override
     public void constructRenderer() {
-        this.texture = "assets/nyabsolutelyrandom/stationapi/textures/accessory/glasses/upside_down.png";
+        this.texture = "/assets/nyabsolutelyrandom/stationapi/textures/accessory/glasses/upside_down.png";
         super.constructRenderer();
     }
 }
