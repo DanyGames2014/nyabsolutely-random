@@ -4,6 +4,7 @@ import com.matthewperiut.accessoryapi.api.AccessoryRegister;
 import net.danygames2014.nyabsolutelyrandom.block.BirthdayCakeBlock;
 import net.danygames2014.nyabsolutelyrandom.block.PosterBlock;
 import net.danygames2014.nyabsolutelyrandom.block.RotatableBlock;
+import net.danygames2014.nyabsolutelyrandom.block.TaterBlock;
 import net.danygames2014.nyabsolutelyrandom.item.*;
 import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.block.Block;
@@ -40,8 +41,11 @@ public class NyabsolutelyRandom {
     public static Block transFlag;
     public static Block czechFlag;
 
+    public static Block taterBlock;
+    public static Block irritaterdBlock;
+
     @EventListener
-    public void registerItems(ItemRegistryEvent event){
+    public void registerItems(ItemRegistryEvent event) {
         registerAccessorySlots();
 
         glassesItem = new GlassesItem(NAMESPACE.id("glasses")).setTranslationKey(NAMESPACE, "glasses");
@@ -56,16 +60,19 @@ public class NyabsolutelyRandom {
         banHammerItem = new BanHammerItem(NAMESPACE.id("ban_hammer")).setTranslationKey(NAMESPACE, "ban_hammer");
 
         ToolMaterial glassMaterial = ToolMaterialFactory.create("glass", 0, 1, 1, 16);
-        glassSwordItem = new GlassSwordItem(NAMESPACE.id("glass_sword"),glassMaterial).setTranslationKey(NAMESPACE, "glass_sword");
+        glassSwordItem = new GlassSwordItem(NAMESPACE.id("glass_sword"), glassMaterial).setTranslationKey(NAMESPACE, "glass_sword");
     }
 
     @EventListener
-    public void registerBlocks(BlockRegistryEvent event){
+    public void registerBlocks(BlockRegistryEvent event) {
         calmilamsyCakeBlock = new BirthdayCakeBlock(NAMESPACE.id("calmilamsy_cake"), "calmilamsy").setTranslationKey(NAMESPACE, "calmilamsy_cake");
         mineDiverBlock = new RotatableBlock(NAMESPACE.id("mine_diver_block"), Material.SPONGE).setTranslationKey(NAMESPACE.id("mine_diver_block"));
 
         transFlag = new PosterBlock(NAMESPACE.id("trans_flag")).setTranslationKey(NAMESPACE, "trans_flag");
         czechFlag = new PosterBlock(NAMESPACE.id("czech_flag")).setTranslationKey(NAMESPACE, "czech_flag");
+
+        taterBlock = new TaterBlock(NAMESPACE.id("tater")).setTranslationKey(NAMESPACE, "tater");
+        irritaterdBlock = new TaterBlock(NAMESPACE.id("irritaterd")).setTranslationKey(NAMESPACE, "irritaterd");
     }
 
     public void registerAccessorySlots() {

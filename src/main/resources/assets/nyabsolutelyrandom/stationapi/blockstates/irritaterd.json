@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "nyabsolutelyrandom:block/irritaterd"
+    },
+    "facing=east": {
+      "model": "nyabsolutelyrandom:block/irritaterd",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "nyabsolutelyrandom:block/irritaterd",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nyabsolutelyrandom:block/irritaterd",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "nyabsolutelyrandom:block/tater"
+    },
+    "facing=east": {
+      "model": "nyabsolutelyrandom:block/tater",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "nyabsolutelyrandom:block/tater",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nyabsolutelyrandom:block/tater",
+      "y": 270
+    }
+  }
+}

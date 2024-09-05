@@ -1,0 +1,6 @@
+{
+  "parent": "nyabsolutelyrandom:block/tater_base",
+  "textures": {
+    "texture": "nyabsolutelyrandom:block/tater/normal"
+  }
+}
