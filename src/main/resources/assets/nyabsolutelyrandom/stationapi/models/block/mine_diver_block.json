@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nyabsolutelyrandom:block/mine_diver_block/bottom",
+    "up": "nyabsolutelyrandom:block/mine_diver_block/top",
+    "north": "nyabsolutelyrandom:block/mine_diver_block/left",
+    "east": "nyabsolutelyrandom:block/mine_diver_block/back",
+    "south": "nyabsolutelyrandom:block/mine_diver_block/right",
+    "west": "nyabsolutelyrandom:block/mine_diver_block/front"
+  }
+}

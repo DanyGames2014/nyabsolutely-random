@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "nyabsolutelyrandom:block/mine_diver_block"
+    },
+    "facing=east": {
+      "model": "nyabsolutelyrandom:block/mine_diver_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "nyabsolutelyrandom:block/mine_diver_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "nyabsolutelyrandom:block/mine_diver_block",
+      "y": 270
+    }
+  }
+}
