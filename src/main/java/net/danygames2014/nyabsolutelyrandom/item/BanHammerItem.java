@@ -32,7 +32,7 @@ public class BanHammerItem extends TemplateItem {
         if(attackedPlayer instanceof ServerPlayerEntity attacked && attackerPlayer instanceof ServerPlayerEntity attacker){
             if(checkForOpStatus){
                 if (!attacker.server.field_2842.method_584(attacker.name)) {
-                    attacker.method_490(Formatting.RED + "You do not posses the powers to wield this hammer!");
+                    attacker.sendMessage(Formatting.RED + "You do not posses the powers to wield this hammer!");
                     return;
                 }
             }
@@ -44,7 +44,7 @@ public class BanHammerItem extends TemplateItem {
             playerList.method_561(attacked.name);
             attacked = playerList.method_586(attacked.name);
             if (attacked != null) {
-                attacked.field_255.disconnect("The Ban Hammer has spoken");
+                attacked.networkHandler.disconnect("The Ban Hammer has spoken");
             }
         }
     }

@@ -21,9 +21,9 @@ public class BirthdayCakeBlock extends TemplateBlock {
     public boolean onUse(World world, int x, int y, int z, PlayerEntity player) {
         if (!world.isRemote) {
             if (player.name.equals(celebrator)) {
-                player.method_490("Happy Birthday " + celebrator + "!");
+                player.sendMessage("Happy Birthday " + celebrator + "!");
             } else {
-                player.method_490("This is " + celebrator + "'s Birthday Cake");
+                player.sendMessage("This is " + celebrator + "'s Birthday Cake");
             }
             return true;
         }
