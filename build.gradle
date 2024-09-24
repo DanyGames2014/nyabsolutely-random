@@ -80,27 +80,42 @@ dependencies {
 
     modImplementation "net.modificationstation:StationAPI:${project.stapi_version}"
 
-    // Optional, but convenient mods for mod creators and users alike.
+    // Mod Menu
     modImplementation("net.glasslauncher.mods:ModMenu:${project.modmenu_version}") {
         transitive false
     }
+    
+    // Glass Networking
+    modImplementation("net.glasslauncher.mods:glass-networking:${project.glass_networking_version}") {
+        transitive false
+    }
+
+    // Glass Config API
     modImplementation("net.glasslauncher.mods:GlassConfigAPI:${project.gcapi_version}") {
         transitive false
     }
+    
+    // Always More Items
     modImplementation("net.glasslauncher.mods:AlwaysMoreItems:${project.alwaysmoreitems_version}") {
         transitive false
     }
+    
+    // BH Creative
 //	modImplementation ("com.github.paulevsGitch:BHCreative:${project.bhcreative_version}"){
 //		transitive false
 //	}
+    
+    // SPC
     modImplementation("com.github.matthewperiut:spc-babric:${project.spc_version}") {
         transitive false
     }
+    
+    // Spawn Eggs
     modImplementation("net.danygames2014:spawneggs:${project.spawneggs_version}") {
         transitive false
     }
 
-    // Dependencies
+    // Accessory API
     modImplementation("com.github.matthewperiut:accessory-api:${project.accessoryapi_version}") {
         transitive false
     }
