@@ -9,6 +9,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.item.ItemStack;
 import net.modificationstation.stationapi.api.template.item.TemplateItem;
 import net.modificationstation.stationapi.api.util.Identifier;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
@@ -40,8 +41,8 @@ public class GlassesItem extends TemplateItem implements Accessory, HasCustomRen
     }
 
     @Override
-    public Optional<AccessoryRenderer> getRenderer() {
-        return Optional.ofNullable(renderer);
+    public @Nullable AccessoryRenderer getRenderer() {
+        return renderer;
     }
 
     @Override

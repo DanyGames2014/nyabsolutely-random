@@ -1,6 +1,5 @@
 package net.danygames2014.nyabsolutelyrandom.item;
 
-import net.danygames2014.nyabsolutelyrandom.client.GlassesRenderer;
 import net.minecraft.class_555;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.render.Tessellator;

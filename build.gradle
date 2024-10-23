@@ -1,6 +1,6 @@
 plugins {
-    id 'fabric-loom' version '1.7.2'
-    id 'babric-loom-extension' version '1.7.4'
+    id 'fabric-loom' version '1.8.10'
+    id 'babric-loom-extension' version '1.8.6'
     id 'maven-publish'
 }
 
@@ -106,7 +106,7 @@ dependencies {
 //	}
     
     // SPC
-    modImplementation("com.github.matthewperiut:spc-babric:${project.spc_version}") {
+    modImplementation("com.github.matthewperiut:retrocommands:${project.retrocommands_version}") {
         transitive false
     }
     
@@ -117,6 +117,10 @@ dependencies {
 
     // Accessory API
     modImplementation("com.github.matthewperiut:accessory-api:${project.accessoryapi_version}") {
+        transitive false
+    }
+
+    modRuntimeOnly ("com.github.matthewperiut:stapi-fast-intro:17a7ed0") {
         transitive false
     }
 }
